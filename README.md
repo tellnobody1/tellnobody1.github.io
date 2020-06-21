@@ -12,8 +12,11 @@
 ## Games
 
 ### Windows 10
-- Desperados 1
+- Desperados: Wanted Dead or Alive
 - [Paradise Cracked](http://www.reality413.com/index.php/adventures/paradise)
+- Heroes of Might and Magic 3
+- X-Com: Apocalypse
+- Fallout
 
 ### PlayStation 4
 - Call of Duty: WWII
