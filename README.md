@@ -19,7 +19,6 @@
 - Fallout
 - Heroes of Might and Magic 3
 - [OpenTTD](https://www.openttd.org)
-- [Paradise Cracked](http://www.reality413.com/index.php/adventures/paradise)
 - X-Com: Apocalypse
 
 ### PlayStation 4
@@ -30,3 +29,9 @@
 ### PlayStation 3
 - Fallout 3
 - ...
+
+# Favorite
+
+## Games
+
+- [Paradise Cracked](http://www.reality413.com/index.php/adventures/paradise)
