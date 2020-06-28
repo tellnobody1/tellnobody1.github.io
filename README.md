@@ -35,3 +35,7 @@
 ## Games
 
 - [Paradise Cracked](http://www.reality413.com/index.php/adventures/paradise)
+- Cossacks
+- Heroes of Might and Magic 3
+- Commandos (all parts)
+- Fallout: New Vegas
