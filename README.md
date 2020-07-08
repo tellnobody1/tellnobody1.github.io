@@ -39,3 +39,9 @@
 - Heroes of Might and Magic 3
 - Commandos (all parts)
 - Fallout: New Vegas
+
+### Themes
+
+- Cyberpank, Post-apocalyptic
+- Tactical, RPG, Realtime
+- Isometric, 3rd-person
