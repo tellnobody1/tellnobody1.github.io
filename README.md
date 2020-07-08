@@ -25,6 +25,8 @@
 - Call of Duty: WWII
 - Farming Simulator 19
 - Cities: Skylines
+- NBA 2K20
+- Erica
 
 ### PlayStation 3
 - Fallout 3
