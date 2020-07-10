@@ -7,6 +7,7 @@
 
 ## Boardgames
 - [Kanagawa](https://desktopgames.com.ua/ua/kanagawa.html)
+- [BGG](https://www.boardgamegeek.com/wishlist/tellnobody1)
 
 ## Devices
 - [Echo Link](https://www.amazon.com/dp/B0798DVZCY)
