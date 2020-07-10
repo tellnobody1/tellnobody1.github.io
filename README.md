@@ -5,6 +5,9 @@
 - [Desperados III](https://store.playstation.com/ru-ua/product/EP4389-CUSA11112_00-DES3DELUXEEU0000)
 - Warhammer 40,000: Dawn of War
 
+## Boardgames
+- [Kanagawa](https://desktopgames.com.ua/ua/kanagawa.html)
+
 ## Devices
 - [Echo Link](https://www.amazon.com/dp/B0798DVZCY)
 
