@@ -31,6 +31,7 @@
 - Cities: Skylines
 - NBA 2K20
 - Erica
+- Star Wars Battlefront II
 
 ### PlayStation 3
 - Fallout 3
