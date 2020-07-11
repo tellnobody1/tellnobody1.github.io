@@ -51,3 +51,7 @@
 - Cyberpank, Post-apocalyptic
 - Tactical, RPG, Realtime
 - Isometric, 3rd-person
+
+# Profiles
+- [HackerRank](https://www.hackerrank.com/a_nemchenko?hr_r=1)
+- [Stackoverflow](https://stackoverflow.com/users/355491/andrii-nemchenko)
