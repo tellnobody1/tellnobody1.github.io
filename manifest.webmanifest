@@ -1,0 +1,7 @@
+{
+  "background_color": "black",
+  "display": "standalone",
+  "icons": [],
+  "name": "tellnobody1",
+  "start_url": "index.html"
+}
