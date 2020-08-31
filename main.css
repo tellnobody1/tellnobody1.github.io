@@ -11,7 +11,7 @@ article {
   background: lightgray;
   border-radius: 0.75rem;
   padding: 0 1.5rem;
-  margin: 0 1.25rem 1.25rem 0;
+  margin: 0 0.75rem 1.5rem 0.75rem;
 }
 article:hover {
   height: auto;
