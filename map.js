@@ -4,6 +4,11 @@ const map = new mapboxgl.Map({ container: 'map', zoom: 0, center: [30.523333, 50
 map.addControl(new mapboxgl.FullscreenControl())
 map.dragRotate.disable()
 map.touchZoomRotate.disableRotation()
+const light = () => map.setStyle('mapbox://styles/mapbox/light-v10')
+const dark  = () => map.setStyle('mapbox://styles/mapbox/dark-v10')
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) dark()
+else light()
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => e.matches ? dark() : light())
 
 const addMarker = (label, lng, lat, color) => new mapboxgl.Marker({ color: color}).setLngLat([lng, lat]).setPopup(new mapboxgl.Popup().setText(label)).addTo(map)
 const addPlane = (label, lng, lat) => {
