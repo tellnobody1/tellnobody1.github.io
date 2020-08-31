@@ -9,9 +9,9 @@ article {
   height: 25rem;
   overflow: hidden;
   background: lightgray;
-  border-radius: 10px;
-  padding: 0 20px;
-  margin: 0 15px 15px 0;
+  border-radius: 0.75rem;
+  padding: 0 1.5rem;
+  margin: 0 1.25rem 1.25rem 0;
 }
 article:hover {
   height: auto;
