@@ -1,21 +1,10 @@
-<title>Places</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
-<link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet'>
-<style>.plane:after { font-size: 1.5rem; content: "✈️" }</style>
-<div id='map' style='width: 100%; height: 100%;'></div>
-<script>
+'use strict'
 mapboxgl.accessToken = 'pk.eyJ1IjoiZHJldHJlIiwiYSI6ImNrZG14enZldTA1cTQzMWxidGRreGloYTUifQ.G8h_l-klBQxz5Pp6JUpM7g'
-const map = new mapboxgl.Map({ container: 'map', zoom: 1, center: [30.523333, 50.45] })
+const map = new mapboxgl.Map({ container: 'map', zoom: 0, center: [30.523333, 50.45] })
 map.addControl(new mapboxgl.FullscreenControl())
 map.dragRotate.disable()
 map.touchZoomRotate.disableRotation()
-const light = () => map.setStyle('mapbox://styles/mapbox/light-v10')
-const dark = () => map.setStyle('mapbox://styles/mapbox/dark-v10')
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) dark()
-else light()
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => e.matches ? dark() : light())
+
 const addMarker = (label, lng, lat, color) => new mapboxgl.Marker({ color: color}).setLngLat([lng, lat]).setPopup(new mapboxgl.Popup().setText(label)).addTo(map)
 const addPlane = (label, lng, lat) => {
   const el = document.createElement('div')
@@ -40,14 +29,17 @@ addMarker('Florence', 11.2480006000001, 43.7710332, '#3fb1ce')
 addMarker('Gradara', 12.7710328000001, 43.9395805, '#3fb1ce')
 addMarker('Helsinki', 24.9410248, 60.1733244, '#3fb1ce')
 addMarker('Hydra', 23.466667, 37.35, '#3fb1ce')
+addMarker('Kehlsteinhaus', 13.041667, 47.611111, '#3fb1ce')
 addMarker('London', -0.127758299999982, 51.5073509, '#3fb1ce')
 addMarker('Long Beach', -73.657908, 40.5884373, '#3fb1ce')
 addMarker('Lucerne', 8.30930720000003, 47.0501682, '#3fb1ce')
 addMarker('Milan', 9.18592430000001, 45.4654219, '#3fb1ce')
 addMarker('Montreal', -73.567256, 45.5016889, '#3fb1ce')
 addMarker('Munich', 11.5819800272584, 48.1367971094294, '#3fb1ce')
+addMarker('Neuschwanstein Castle', 10.749517, 47.557529, '#3fb1ce')
 addMarker('New Haven', -72.9278835, 41.308274, '#3fb1ce')
 addMarker('New York', -74.0059413, 40.7127837, '#3fb1ce')
+addMarker('Niagara Falls', -79.106667, 43.06, '#3fb1ce')
 addMarker('Ottawa', -75.6971931, 45.4215296, '#3fb1ce')
 addMarker('Oxford', -1.25772630000006, 51.7520209, '#3fb1ce')
 addMarker('Pesaro', 12.9155494, 43.9124756, '#3fb1ce')
@@ -62,6 +54,7 @@ addMarker('Salzburg', 13.0550089851022, 47.8111726667431, '#3fb1ce')
 addMarker('San Marino', 12.447354, 43.935225, '#3fb1ce')
 addMarker('Sleepy Hollow', -73.8584684, 41.085652, '#3fb1ce')
 addMarker('Stockholm', 18.0685808000001, 59.3293235, '#3fb1ce')
+addMarker('Stonehenge', -1.826111, 51.178889, '#3fb1ce')
 addMarker('Tallinn', 24.7535746, 59.4369608, '#3fb1ce')
 addMarker('Toronto', -79.3831843, 43.653226, '#3fb1ce')
 addMarker('Urbino', 12.6365633, 43.7262567, '#3fb1ce')
@@ -69,10 +62,6 @@ addMarker('Venice', 12.3155151, 45.4408474, '#3fb1ce')
 addMarker('Washington', -77.0368707, 38.9071923, '#3fb1ce')
 addMarker('Zürich', 8.54169400000001, 47.3768866, '#3fb1ce')
 addMarker('Санкт-Петербург', 30.1213829000001, 60.0762383, '#3fb1ce')
-addMarker('Niagara Falls', -79.106667, 43.06, '#3fb1ce')
-addMarker('Stonehenge', -1.826111, 51.178889, '#3fb1ce')
-addMarker('Neuschwanstein Castle', 10.749517, 47.557529, '#3fb1ce')
-addMarker('Kehlsteinhaus', 13.041667, 47.611111, '#3fb1ce')
 
 addMarker('Айя', 33.6484296, 44.4407721, '#0288d1')
 addMarker('Запоріжжя', 35.1395669999999, 47.8388, '#0288d1')
@@ -92,4 +81,3 @@ addPlane('Nara', 135.8050002, 34.6850869)
 addPlane('Osaka', 135.5021651, 34.6937378)
 addPlane('Paris', 2.35222190000002, 48.856614)
 addPlane(`Xi'an`, 108.93977, 34.341574)
-</script>

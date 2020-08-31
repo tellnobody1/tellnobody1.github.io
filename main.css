@@ -1,0 +1,36 @@
+body {
+  font-family: 'Manrope', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+article {
+  width: 25rem;
+  height: 25rem;
+  overflow: hidden;
+  background: lightgray;
+  border-radius: 10px;
+  padding: 0 20px;
+  margin: 0 15px 15px 0;
+}
+article:hover {
+  height: auto;
+}
+#map {
+  width: 100%;
+  height: 100%;
+}
+#map .plane::after {
+  font-size: 1.5rem;
+  content: "✈️";
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: black;
+    color: lightgray;
+  }
+  article {
+    background: gray;
+  }
+}

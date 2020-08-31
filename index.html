@@ -1,15 +1,45 @@
-<title>tellnobody1</title>
+<title>nobodytells.me</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta charset="utf-8">
 <link rel="manifest" href="manifest.webmanifest">
-<link href='css/material.min.css' rel='stylesheet'>
-<style>body { font-family: 'Manrope', sans-serif; }</style>
-<p><a href="places.html">Places</a></p>
-<p><a href="cv">CV</a></p>
-<script>
-const light = () => document.body.classList.remove('dark-theme')
-const dark = () => document.body.classList.add('dark-theme')
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) dark()
-else light()
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => e.matches ? dark() : light())
-</script>
+<link href="main.css" rel="stylesheet">
+<article>
+  <header><h3>Reasons why I've switched from iPhone/iOS to Android</h3></header>
+  <ol>
+    <li>Possibility to use homebrew apps and games. Mainly it is FOSS and FOSS-only app market FDroid</li>
+    <li>Possibility to develop homebrew apps and games without developer's account and monetization in mind</li>
+    <li>Lower my status by not using $1K+ smartphone and $400 watch</li>
+    <li>Answer to Apple for their policies (not refundable accidental subscriptions, too expensive devices and accessories, accumulation of unused money, constant buying of startups, not fair play on apps market, censorship, opposition to FOSS). Others also do some stuff of these but Apple biggest income from iPhones and App Store.</li>
+    <li>Stable Tor browser</li>
+    <li>Apps which are deleted from App Store and/or Play Market</li>
+    <li>Ability to use Alexa/Google Assistant system-wide</li>
+    <li>Real Firefox browser</li>
+    <li>TrackR app which need constant background location</li>
+    <li>Forked Telegram with OpenStreetMaps</li>
+    <li>FOSS mail client with automatic encryption support</li>
+    <li>Alternative YouTube app without adds</li>
+    <li>Fast charging using Type-C-to-Type-C cable (as for MacBook and nearly all new devices)</li>
+    <li>Best adoption for NFC in apps</li>
+    <li>Spam control for SMS</li>
+    <li>Control Android TV with ease by app and assistant</li>
+  </ol>
+  <p>
+    Problems I've faced
+    <ol>
+      <li>Apple Watch is almost useless. For the moment I won't use watch at all. I will consider to buy rival LTE-enabled watch in the future</li>
+      <li>Quality of my Android phone is not compared to iPhone</li>
+      <li>Battery life is slightly shorter</li>
+      <li>Screen and touch experience is better on iPhone X</li>
+    </ol>
+  </p>
+  <p>
+    About me. I had 3 iPhones, 2 Apple Watches with 5 Apple Bands, 4 MacBooks, AirPort Express. Now I have Pixel 3 because it comes with pure Android and has fingerprint sensor, OLED screen, wireless charging, NFC and has small form-factor.
+  </p>
+</article>
+<article>
+  <header><h3>My Places</h3></header>
+  <section id="map"></section>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet'>
+  <script src="map.js"></script>
+</article>
