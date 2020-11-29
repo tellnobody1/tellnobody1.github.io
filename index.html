@@ -10,28 +10,115 @@
 </style>
 </head>
 <body>
-<div class="container">
+<div class="container" style="max-width: 50rem">
 <button type="button" id="blog" class="btn btn-secondary">Записи</button>
 <button type="button" id="trvl" class="btn btn-secondary">Подорожі</button>
+<button type="button" id="vgms" class="btn btn-secondary">Ігри</button>
 <script>
-document.getElementById("blog").addEventListener("click", (() => {
+const menu = id => ids => document.getElementById(id).addEventListener("click", (() => {
   let show = true
   return () => {
     show = !show
-    document.getElementById("blog1").style.display = show ? null : "none"
-    document.getElementById("blog").classList.add(show ? "btn-secondary" : "btn-outline-secondary")
-    document.getElementById("blog").classList.remove(show ? "btn-outline-secondary" : "btn-secondary")
+    ids.map(id1 => {
+      if (show) document.getElementById(id1).classList.remove("d-none")
+      else document.getElementById(id1).classList.add("d-none")
+    })
+    document.getElementById(id).classList.add(show ? "btn-secondary" : "btn-outline-secondary")
+    document.getElementById(id).classList.remove(show ? "btn-outline-secondary" : "btn-secondary")
   }
 })())
-document.getElementById("trvl").addEventListener("click", (() => {
-  let show = true
-  return () => {
-    show = !show
-    document.getElementById("trvl1").style.display = show ? null : "none"
-    document.getElementById("trvl").classList.add(show ? "btn-secondary" : "btn-outline-secondary")
-    document.getElementById("trvl").classList.remove(show ? "btn-outline-secondary" : "btn-secondary")
-  }
-})())
+menu("blog")(["blog1"])
+menu("trvl")(["trvl1"])
+menu("vgms")(["vgms1"])
+</script>
+<article id="vgms1" class="carousel slide">
+  <h3>Улюблені відеоігри</h3>
+  <ol class="carousel-indicators" style="margin-left: auto; margin-right: auto; background: blueviolet"></ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://upload.wikimedia.org/wikipedia/en/2/21/Nier_Automata_cover_art.jpg" class="d-block">
+      <div class="carousel-caption d-none d-md-block">
+        <div><h5 class="d-inline-block" style="background: blueviolet">Nier: Automata</h5></div>
+        <div><p class="d-inline-block" style="background: blueviolet">
+          постапокаліпcис, рольовий бойовик
+        </p></div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://upload.wikimedia.org/wikipedia/en/3/34/Fallout_New_Vegas.jpg" class="d-block">
+      <div class="carousel-caption d-none d-md-block">
+        <div><h5 class="d-inline-block" style="background: blueviolet">Fallout: New Vegas</h5></div>
+        <div><p class="d-inline-block" style="background: blueviolet">
+          постапокаліпcис, рольовий бойовик
+        </p></div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://upload.wikimedia.org/wikipedia/en/3/31/Commandos_Beyond_the_Call_of_Duty.jpg" class="d-block">
+      <div class="carousel-caption d-none d-md-block">
+        <div><h5 class="d-inline-block" style="background: blueviolet">Commandos: Beyond the Call of Duty</h5></div>
+        <div><p class="d-inline-block" style="background: blueviolet">
+          історія, тактика в реальному часі
+        </p></div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://upload.wikimedia.org/wikipedia/uk/5/51/%D0%9A%D0%BE%D0%B7%D0%B0%D0%BA%D0%B8_%D0%84%D0%B2%D1%80%D0%BE%D0%BF%D0%B5%D0%B9%D1%81%D1%8C%D0%BA%D1%96_%D0%B2%D1%96%D0%B9%D0%BD%D0%B8._%D0%9E%D0%B1%D0%BA%D0%BB%D0%B0%D0%B4%D0%B8%D0%BD%D0%BA%D0%B0_%D0%B4%D0%B8%D1%81%D0%BA%D1%83.png" class="d-block">
+      <div class="carousel-caption d-none d-md-block">
+        <div><h5 class="d-inline-block" style="background: blueviolet">Козаки: Європейські війни</h5></div>
+        <div><p class="d-inline-block" style="background: blueviolet">
+          історія, стратегія в реальному часі
+        </p></div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://upload.wikimedia.org/wikipedia/ru/f/fe/%D0%9A%D0%BE%D0%B4_%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%B0_%D0%A0%D0%90%D0%99.jpg" class="d-block" style="max-height: 24rem">
+      <div class="carousel-caption d-none d-md-block">
+        <div><h5 class="d-inline-block" style="background: blueviolet">Код доступа: РАЙ</h5></div>
+        <div><p class="d-inline-block" style="background: blueviolet">
+          кіберпанк, покрокова тактична стратегія і тактична рольова гра
+        </p></div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/Homm3boxart.jpg" class="d-block">
+      <div class="carousel-caption d-none d-md-block">
+        <div><h5 class="d-inline-block" style="background: blueviolet">Heroes of Might and Magic III</h5></div>
+        <div><p class="d-inline-block" style="background: blueviolet">
+          очар'я, покрокова стратегія
+        </p></div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://upload.wikimedia.org/wikipedia/en/2/28/Worms_2_Armageddon_cover.jpg" class="d-block">
+      <div class="carousel-caption d-none d-md-block">
+        <div><h5 class="d-inline-block" style="background: blueviolet">Worms 2: Armageddon</h5></div>
+        <div><p class="d-inline-block" style="background: blueviolet">
+          артилерія, покрокова тактична гра
+        </p></div>
+      </div>
+    </div>
+  </div>
+</article>
+<style>
+#vgms1 .carousel-item { height: 21rem }
+#vgms1 .carousel-item.active { display: flex }
+#vgms1 .carousel-item img { max-height: 21rem; margin: auto }
+</style>
+<script>
+[...document.querySelectorAll("#vgms1 .carousel-item")].map(x => {
+  let li = document.createElement("li")
+  document.querySelector("#vgms1 .carousel-indicators").appendChild(li)
+  li.addEventListener("click", () => {
+    [...document.querySelectorAll("#vgms1 .carousel-indicators li")].map(y => y.classList.remove("active"))
+    li.classList.add("active");
+    [...document.querySelectorAll("#vgms1 .carousel-item")].map(y => y.classList.remove("active"))
+    x.classList.add("active")
+  })
+})
+document.querySelector("#vgms1 .carousel-indicators li").classList.add("active")
+let n = document.querySelectorAll("#vgms1 .carousel-indicators li").length
+document.querySelector("#vgms1 .carousel-indicators").style.width = `calc(${n}*3rem - 2rem)`
 </script>
 <article id="blog1">
   <h3>17 причин, чому я перейшов з iPhone/iOS на Android</h3>
@@ -43,7 +130,7 @@ document.getElementById("trvl").addEventListener("click", (() => {
     <li>Переглядач Tor, котрий стабільно працює</li>
     <li>Apps which are deleted from App Store and/or Play Market</li>
     <li>Ability to use Alexa/Google Assistant system-wide</li>
-    <li>Real Firefox browser</li>
+    <li>Справжній переглядач Firefox з додатками</li>
     <li>TrackR app which need constant background location</li>
     <li>Forked Telegram with OpenStreetMaps</li>
     <li>FOSS mail client with automatic encryption support</li>

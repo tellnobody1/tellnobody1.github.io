@@ -1,6 +1,6 @@
 'use strict'
 mapboxgl.accessToken = 'pk.eyJ1IjoiZHJldHJlIiwiYSI6ImNrZG14enZldTA1cTQzMWxidGRreGloYTUifQ.G8h_l-klBQxz5Pp6JUpM7g'
-const map = new mapboxgl.Map({ container: 'map', zoom: 0, center: [30.523333, 50.45] })
+const map = new mapboxgl.Map({ container: 'map', zoom: 1, center: [30.523333, 50.45] })
 map.addControl(new mapboxgl.FullscreenControl())
 map.dragRotate.disable()
 map.touchZoomRotate.disableRotation()
